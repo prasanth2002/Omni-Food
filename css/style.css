@@ -561,7 +561,6 @@ strong {
     display: grid;
     grid-template-columns: 2fr 2fr;
     gap: 2.5rem;
-
 }
 
 .testimonial-img {
