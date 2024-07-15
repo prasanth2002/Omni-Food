@@ -8,6 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/quries.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="logo-image">
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 
 </head>
@@ -18,10 +19,10 @@
 
         <nav class="navigation ">
             <ul class="navigation-list">
-                <li> <a class="nav-a" href="">How it works</a></li>
-                <li> <a class="nav-a" href="">Meals</a></li>
-                <li> <a class="nav-a" href="">Testimonials</a></li>
-                <li> <a class="nav-a" href="">Pricing Us</a></li>
+                <li> <a class="nav-a" href="#how">How it works</a></li>
+                <li> <a class="nav-a" href="#meals">Meals</a></li>
+                <li> <a class="nav-a" href="#testimonial">Testimonials</a></li>
+                <li> <a class="nav-a" href="#pricing">Pricing Us</a></li>
                 <li> <a class=" nav-a main-nav-button" href=""> Button </a></li>
             </ul>
 
@@ -44,7 +45,7 @@
                     Tailored to your personal tastes and nutritional needs.
                     We have delivered 250,000+ meals last year!
                 </p>
-                <a href="#" class="btn margin-right"> Start eating </a>
+                <a href="#cta" class="btn margin-right"> Start eating </a>
                 <a href="#" class="btn-outlined">Learn more &darr;</a>
 
                 <div class="delivered-meals">
@@ -62,7 +63,13 @@
             </div>
 
             <div class="hero-img-box">
-                <img src="img/hero.png" class="hero-img" alt="" srcset="">
+                <picture>
+                    <source srcset="img/hero.webp" type="image/webp"/>
+                    <source srcset="img/hero.png" type="image/png"> 
+                    <img class="hero-img" src="img/hero.webp" alt="woman-eating" srcset="">
+                </picture>
+              
+                <!-- <img src="img/hero.png" class="hero-img" alt="woman eating" > -->
             </div>
 
         </div>
@@ -81,9 +88,9 @@
         </div>
     </section>
 
-    <section class="section-how">
-        <div class="container">
-            <span class="subheading"> How it works</span>
+    <section class="section-how" id="how">
+        <div class="container" >
+            <span class="subheading" > How it works</span>
             <h2 class="heading-secondary">
                 Your daily dose of health in 3 simple steps
             </h2>
@@ -155,7 +162,7 @@
         </div>
     </section>
 
-    <section class="section-meals">
+    <section class="section-meals" id="meals">
         <div class="container center-text">
             <span class="subheading"> Meals</span>
             <h2 class="heading-secondary">
@@ -238,7 +245,7 @@
         </div>
     </section>
 
-    <section class=" section-testimonial grid-testimonial ">
+    <section class=" section-testimonial grid-testimonial " id="testimonial">
         <div class="testimonial-container">
             <span class="subheading"> Testimonials</span>
             <h2 class="heading-secondary">
@@ -341,7 +348,7 @@
 
     </section>
 
-    <section class="section-card">
+    <section class="section-card" id="pricing">
         <div class="container">
             <span class="subheading"> Pricing</span>
             <h2 class="heading-secondary">
@@ -470,7 +477,7 @@
         </div>
     </section>
 
-    <section class="section-cta">
+    <section class="section-cta" id="cta">
         <div class="container cta">
             <div class="cta-text-box">
                 <h2 class="heading-secondary cta-head"> get your first meal for free</h2>
@@ -530,7 +537,7 @@
                         </li>
                     </ul>
                     <p class="copyright">
-                        copyright &copy; 2024 by omifood ,Inc, All rights
+                        copyright &copy; <span class="year"> </span> by omifood ,Inc, All rights
                         reserved
 
                 </a>
@@ -585,6 +592,7 @@
         </div>
 
     </footer>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
